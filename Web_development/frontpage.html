@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSRRM Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo clinic.jpg" type="image/png">
+    <style>
+        .overlay-box {
+            animation: slideDownAppear 1.2s ease-out forwards;
+            opacity: 0; 
+        }
+
+        @keyframes slideDownAppear {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px); 
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); 
+            }
+        }
+
+        .btn-get-started:hover, .btn-learn-more:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="img/logo clinic.jpg" alt="Logo" class="logo-img">
+        <span>DSRRM CLINIC</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="frontpage.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li> 
+        <li><a href="terms and Policy.html">Terms and Policy</a></li>
+    </ul>
+    <a href="login.php" class="login-btn">Log In</a>
+</nav>
+
+<section class="hero">
+    <div class="overlay-box">
+        <h1>A Healthier<br>Future For<br>Bcpians</h1>
+        <p>Store and Manage Health Data With<br><b>DSRRM CLINIC</b></p>
+
+        <div class="hero-buttons">
+            <a href="login.php" class="btn-get-started">Get Started</a>
+            <a href="aboutus.html" class="btn-learn-more">Learn More</a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSRRM Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<style>
+    .policy-section {
+        overflow: hidden;
+    }
+
+    .policy-section h1 {
+        opacity: 0;
+        animation: slideDownFromTop 1.2s ease-out forwards;
+    }
+
+    .policy-container {
+        opacity: 0;
+        animation: slideUpFromBottom 1.2s ease-out forwards;
+    }
+
+    @keyframes slideDownFromTop {
+        0% {
+            opacity: 0;
+            transform: translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideUpFromBottom {
+        0% {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .policy-list li {
+        opacity: 1; 
+    }
+    </style>
+
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="img/logo clinic.jpg" alt="Logo" class="logo-img">
+        <span>DSRRM CLINIC</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="frontpage.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="terms and Policy.html" class="active">Terms and Policy</a></li>
+    </ul>
+    <a href="login.php" class="login-btn">Log In</a>
+</nav>
+
+<section class="policy-section">
+    <h1>Terms and Policy</h1>
+    <div class="policy-container">
+        <h2 class="policy-title">Privacy Policy</h2>
+        <p class="policy-text">
+            DSRRM CLINIC is committed to protecting the privacy and security of student health information. 
+            Our system ensures the highest standards of data protection and confidentiality.
+        </p>
+        <ul class="policy-list">
+            <li><i class="fa-solid fa-check"></i> Collects and stores only necessary medical information</li>
+            <li><i class="fa-solid fa-check"></i> Ensures data confidentiality through secure encryption</li>
+            <li><i class="fa-solid fa-check"></i> Restricts access to authorized personnel only</li>
+            <li><i class="fa-solid fa-check"></i> Complies with data protection regulations</li>
+            <li><i class="fa-solid fa-check"></i> Regular security audits and updates</li>
+            <li><i class="fa-solid fa-check"></i> Secure backup and recovery procedures</li>
+        </ul>
+    </div>
+</section>
+
+</body>
+</html>

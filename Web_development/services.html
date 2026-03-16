@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSRRM Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        .services-section {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .services-section h1 {
+            opacity: 0;
+            animation: slideDown 1.2s ease-out forwards;
+        }
+
+        .services-container {
+            opacity: 0;
+            animation: slideUp 1.2s ease-out forwards;
+        }
+        @keyframes slideDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="img/logo clinic.jpg" alt="Logo" class="logo-img">
+        <span>DSRRM CLINIC</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="frontpage.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="terms and Policy.html">Terms and Policy</a></li>
+    </ul>
+    <a href="login.php" class="login-btn">Log In</a>
+</nav>
+
+<section class="services-section">
+        <h1>Our Services</h1>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-file-circle-check"></i></div>
+                <h3>Health Records Management</h3>
+                <p>Secure and efficient storage of student health records, including:</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Medical histories</li>
+                    <li><i class="fa-solid fa-check"></i> Clinic visit records</li>
+                    <li><i class="fa-solid fa-check"></i> Treatment documentation</li>
+                    <li><i class="fa-solid fa-check"></i> Health assessments</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-file-waveform"></i></div>
+                <h3>Medical Documentation</h3>
+                <p>Streamlined documentation process for:</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Medical incidents</li>
+                    <li><i class="fa-solid fa-check"></i> Treatment procedures</li>
+                    <li><i class="fa-solid fa-check"></i> Follow-up appointments</li>
+                    <li><i class="fa-solid fa-check"></i> Health advisories</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Data Security</h3>
+                <p>Ensuring data protection through:</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Secure data storage</li>
+                    <li><i class="fa-solid fa-check"></i> Access control</li>
+                    <li><i class="fa-solid fa-check"></i> Data encryption</li>
+                    <li><i class="fa-solid fa-check"></i> Regular backups</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

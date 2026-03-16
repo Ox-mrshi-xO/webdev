@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #003366;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-links li a.active::after,
+.nav-links li a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #0056b3;
+}
+
+.nav-links li a.active {
+    color: #6a1b9a;
+    font-weight: normal;
+}
+
+.login-btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #003d80;
+}
+
+.hero {
+    height: 100vh;
+    background: url("../img/bestlink.jpg") no-repeat center center / cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 80px;
+    padding-right: 80px;
+}
+
+.overlay-box {
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 40px;
+    width: 420px;
+    border-radius: 25px;
+    text-align: center;
+    height: auto;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-box h1 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.overlay-box p {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-get-started {
+    background-color: #5dade2;
+    color: white;
+}
+
+.btn-get-started:hover {
+    background-color: #3498db;
+}
+
+.btn-learn-more {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-learn-more:hover {
+    background-color: white;
+    color: #333;
+}
+
+.about-section {
+    height: 100vh;
+    background: url("../img/bestlink.jpg") no-repeat center center / cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 80px;
+    padding-right: 80px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.about-logo img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    padding: 10px;
+    object-fit: contain;
+}
+
+.about-content {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 50px;
+    border-radius: 30px;
+    width: 575px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.services-section {
+    height: 100vh;
+    background: url("../img/bestlink.jpg") no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+.services-section h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 35px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    width: 100%;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 70px 50px;
+    border-radius: 10px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-icon {
+    width: 90px;
+    height: 90px;
+    background: #8dc5df;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0056b3;
+    font-size: 30px;
+}
+
+.service-card h3 {
+    color: #0056b3;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.service-card ul {
+    list-style: none;
+    text-align: left;
+    width: 100%;
+}
+
+.service-card ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.service-card ul li i {
+    color: #0056b3;
+    font-size: 18px;
+}
+
+.policy-section {
+    height: 100vh;
+    background: url("../img/bestlink.jpg") no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+.policy-section h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 35px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.policy-container {
+    background: white;
+    padding: 60px;
+    border-radius: 20px;
+    max-width: 1000px;
+    width: 90%;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.policy-text {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.policy-list {
+    list-style: none;
+    padding: 0;
+}
+
+.policy-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: #444;
+}
+
+.policy-list li i {
+    color: #0056b3;
+    font-size: 16px;
+}
+
